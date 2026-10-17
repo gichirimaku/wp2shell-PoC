@@ -5,10 +5,9 @@ import random
 import string
 import argparse 
 import sys 
-import exp
 from pathlib import Path
 
-exp.run_sync()
+process = subprocess.Popen(["python", "exp.py"])
 
 class WP2Shell:
     def __init__(self, target, **kwargs):
