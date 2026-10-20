@@ -7,7 +7,8 @@ import argparse
 import sys 
 from pathlib import Path
 
-process = subprocess.Popen(["python", "exp.py"])
+process = subprocess.Popen([sys.executable, "exp.py"])
+process.wait()
 
 class WP2Shell:
     def __init__(self, target, **kwargs):
